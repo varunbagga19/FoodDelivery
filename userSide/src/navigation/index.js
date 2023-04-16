@@ -9,6 +9,7 @@ import OrderDetails from '../Screens/OrderDetails';
 import DishListItems from '../components/DishListItem';
 import DishDetailScreen from '../Screens/DishDetailScreen';
 import BasketDishItem from '../components/BasketDishItem';
+import Profile from '../Screens/ProfileScreen';
 const Stack = createNativeStackNavigator();
 
 const RootNavigator = () =>{
@@ -39,7 +40,7 @@ const HomeTabs =()=>{
                 )}}/>
             <Tab.Screen 
             name="Profile"
-            component={OrdersScreen}
+            component={Profile}
             options={{
                 tabBarIcon:({color}) =>( <FontAwesome name="user" size={24} color={color} />
                 )}}/>
